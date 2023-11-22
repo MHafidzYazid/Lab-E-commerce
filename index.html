@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitur Keranjang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="bg-gray-700 p-3 w-full flex justify-between text-white">
+      <div>
+        <a href="#">Home</a>
+      </div>
+      <div>
+        <input type="search" placeholder="Search" class="searchbar px-4 py-2 text-sky-500 w-96 rounded-lg">
+      </div>
+      <div>
+        <a href="#" class="tampilan-keranjang"> <span class="cart_count">0</span> Keranjang</a>
+      </div>
+    </nav>
+
+    <!--isi konten-->
+    <div class="grid grid-cols-3 gap-10 m-5 div-produk"></div>
+
+    <!--Tampilan Modal Berhasil Masuk Ditambahkan ke Keranjang-->
+    <div class="absolute inset-0 bg-gray-500 bg-opacity-80 flex justify-center items-center  modal-berhasil hidden">
+      <div class="bg-white p-8 rounded shadow-md kotak-berhasil">
+        <div class="text-berhasil">
+
+        </div>
+        
+      </div>
+
+    </div>
+
+    <!--Tampilan Modal Keranjang-->
+    <div class="absolute inset-0 bg-gray-500 bg-opacity-10 flex justify-center item-center modal-keranjang hidden">
+      <div class="bg-gray-500 p-5 w-full m-32 rounded text-white">
+
+        <div class="flex justify-between item-center">
+          <div class="font-bold text-xl">Keranjang Anda</div>
+          <div class="font-bold text-xl hover:cursor-pointer btn-tutup">TUTUP</div>
+        </div>
+        <!--Isi produk dari keranjang yang di click atau pilih-->
+        <div class="keranjang-anda grid grid-cols-4 gap-5">
+          
+        </div>
+      </div>
+    </div>
+
+
+    
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
+
+
